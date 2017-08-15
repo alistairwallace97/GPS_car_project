@@ -1,3 +1,14 @@
+//General vague description of how we will roughly lay out our main program. 
+//We can just hace this program loop infinitely until our car reaches it's destination
+// or we can add break clauses or whatever. Probably won't have interupts, maybe just an if statement in the
+// while loop for the proximity sensors.
+//
+//Basically everyone is assigned a broad funciton, like check_sensors(), then writes this function, testing externally
+// on your own laptop, then when it works copy and paste it into here and commit it to the master branch.
+//Remember, no global variables, it could fuck with other people's funcitons, keep them completely self sufficient
+//Add #includes as you like, they won't affect anything
+
+
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -17,6 +28,7 @@ int main(){
   while(!not_done){
     parse_text_input(coordinates_text, lat, longd);
     int direction = work_out_where_to_go(lat, longd);
+    void control_motors(direction);
   }
 
 
