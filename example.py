@@ -20,7 +20,6 @@ while(not_done):
 
 
 print('You have reached your final destination')
-print('test')
 
 
 #Function Definitions
